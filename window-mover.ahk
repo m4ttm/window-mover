@@ -214,6 +214,11 @@ MoveCurrentWindowToDesktop(desktopNumber) {
     focusTheForemostWindow(CurrentDesktop)
 }
 
+MoveCurrentWindowToDesktopAndSwitch(desktopNumber) {
+    MoveCurrentWindowToDesktop(desktopNumber)
+    switchDesktopByNumber(desktopNumber)
+}
+
 closeWindow(){
     global CurrentDesktop
 
